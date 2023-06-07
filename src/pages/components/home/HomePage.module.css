@@ -1,6 +1,7 @@
 .mainContainer {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
@@ -100,11 +101,13 @@
 
   .BgContianer {
     height: 105vh !important;
-    width: auto !important;
+    width: 100vw !important;
+    overflow-x: hidden;
   }
 
   .BgContianer .image{
     width: auto !important;
+    overflow-x: hidden;
   }
 }
 
@@ -132,6 +135,7 @@
   width: 100vw;
 }
 .BgContianer div {
+  overflow-x: hidden;
   position: unset !important;
 }
 
