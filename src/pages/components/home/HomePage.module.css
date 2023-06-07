@@ -100,6 +100,11 @@
 
   .BgContianer {
     height: 105vh !important;
+    width: auto !important;
+  }
+
+  .BgContianer .image{
+    width: auto !important;
   }
 }
 
