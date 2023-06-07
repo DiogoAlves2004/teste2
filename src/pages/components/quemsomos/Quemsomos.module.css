@@ -1,0 +1,116 @@
+.mainContainer {
+}
+
+.uperContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.uperContent h1,
+.uperContent span {
+  font-size: 2em;
+  color: #00a1e7;
+}
+
+.uperContent h1,
+.uperContent span,
+.uperContent p,
+.uperContent button {
+  margin: 10px 0;
+}
+.uperContent p {
+  width: 50vw;
+}
+
+.midContent {
+  width: 100vw;
+  display: flex;
+}
+
+.imageContainer {
+  width: 33%;
+}
+.imageContainer div {
+  position: unset !important;
+}
+
+.imageContainer .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.lowerContent {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BgContianer {
+  position: absolute;
+  z-index: 0;
+  height: 70vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.BgContianer div {
+  position: unset !important;
+  overflow-x: hidden;
+}
+
+.BgContianer .image {
+  overflow-x: hidden;
+  height: 100% !important;
+  position: absolute !important;
+}
+
+.lowerTextContent {
+  position: relative;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.lowerTextContent h1 {
+  font-size: 2em;
+  font-weight: lighter;
+  color: #333;
+}
+.lowerTextContent h2 {
+  font-size: 3.2em;
+  color: #00a1e7;
+}
+
+@media only screen and (max-width: 600px) {
+  .midContent {
+    flex-wrap: wrap;
+  }
+  .midContent .imageContainer {
+    width: 100vw !important;
+    height: 200px;
+  }
+
+  .BgContianer .image {
+    width: auto !important;
+    position: absolute !important;
+  }
+
+  .lowerContent .lowerTextContent {
+    margin-top: 25%;
+  }
+  .lowerTextContent h1 {
+    font-size: 1.2em;
+  }
+  .lowerTextContent h2 {
+    font-size: 1.3em;
+  }
+}

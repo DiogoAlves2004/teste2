@@ -1,0 +1,136 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+}
+.textContainer {
+  position: relative;
+  z-index: 10;
+  top: 25%;
+  left: 100px;
+  width: max-content;
+}
+
+.textContainer h1 {
+  color: #00a1e6;
+  font-size: 3em;
+}
+
+.textContainer h2 {
+  color: #1f1f1f;
+  font-size: 2em;
+  font-weight: 600;
+  width: 500px;
+}
+
+.textContainer h3 {
+  font-size: 1.5em;
+  width: 500px;
+  font-weight: lighter;
+}
+.textContainer h3 span,
+.textContainer ul span {
+  font-weight: bold;
+}
+.textContainer ul {
+  font-size: 1.1em;
+  transform: translate(25px, 0);
+}
+
+.textContainer h1,
+.textContainer h2,
+.textContainer h3,
+.textContainer ul {
+  margin: 10px 0;
+}
+
+.logomarca{
+  position: relative;
+  z-index: 20;
+  left: 100px;
+  top: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .mainContainer {
+    height: 105vh !important;
+  }
+  
+  .imageContianer {
+    position: absolute !important;
+    width: 70vw !important;
+    bottom: -5.5% !important;
+    right: 0 !important;
+  }
+
+  .textContainer {
+    margin: 50px auto 0 auto;
+    top: 0;
+    left: 0;
+    width: 82vw !important;
+  }
+
+  .textContainer h1 {
+    font-size: 2em;
+  }
+
+  .textContainer h2 {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .textContainer h3 {
+    font-size: 0.8em;
+    width: 90vw;
+    font-weight: lighter;
+  }
+  .textContainer h3 span,
+  .textContainer ul span {
+    font-weight: bold;
+  }
+  .textContainer ul {
+    font-size: 1em;
+  }
+
+  .BgContianer {
+    height: 105vh !important;
+  }
+}
+
+.imageContianer {
+  width: 30%;
+  position: absolute;
+  z-index: 10;
+  bottom: 0px;
+  right: 50px;
+}
+.imageContianer div {
+  position: unset !important;
+}
+
+.imageContianer .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.BgContianer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+.BgContianer div {
+  position: unset !important;
+}
+
+.BgContianer .image {
+  height: 100% !important;
+  position: relative !important;
+}

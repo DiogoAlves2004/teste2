@@ -1,0 +1,119 @@
+.mainContainer {
+  width: 100vw;
+  height: max-content;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+}
+
+.content {
+  height: 75vh;
+  display: flex;
+}
+.textContent h1 {
+  color: #00a1e7;
+  font-size: 2.5em;
+}
+
+.textContent h2 {
+  color: #333;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.textContent ul {
+  border-left: 1px dotted #4a4a4a;
+  color: #4a4a4a;
+  padding-left: 14px;
+}
+
+.textContent li h3 {
+  color: #00a1e7;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  width: 40vw;
+  display: flex;
+}
+
+.wppButon {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: #00ba6c;
+  border-radius: 50%;
+  fill: white;
+  transform: translate(25px, 0px);
+  cursor: pointer;
+}
+
+.textContent {
+}
+
+.imageContainer {
+  overflow: hidden;
+  width: auto;
+  height: 50%;
+}
+
+.imageContainer {
+  z-index: 1;
+  width: 24vw;
+  height: 75vh;
+}
+
+.imageContainer .image {
+  object-fit: cover;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+.imageContainer > div {
+  position: unset !important;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .buttonContainer {
+    width: 75vw;
+    position: relative;
+    z-index: 15;
+    bottom: -200px;
+    margin-right: 10px;
+  }
+  .wppButon {
+    width: 90px;
+    height: 50px;
+    transform: translate(25px, 0);
+  }
+  .mainContainer {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    position: relative;
+    z-index: 25;
+    top: -5%;
+  }
+  .imageContainer {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 75vw;
+    transform: translate(0, 0);
+  }
+
+  .imageContainer .image {
+    position: absolute !important;
+    z-index: 2;
+  }
+  .textContent {
+    width: 90vw;
+  }
+  .textContent ul {
+    margin-left: 25px;
+  }
+}

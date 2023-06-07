@@ -1,0 +1,103 @@
+.mainContainer {
+  width: 100vw;
+  height: max-content;
+  padding: 50px 0;
+  background: #00a0e6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uperContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.uperContent form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #4a4a4a;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.uperContent form h1 {
+  font-weight: bold;
+}
+.uperContent form label {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+.uperContent form input {
+  margin: 0 0 5px 0;
+  width: 110%;
+  padding: 5px 0;
+}
+
+.uperContent form button {
+  background: #4a4a4a;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 75%;
+  margin-top: 25px;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  fill: #fff;
+}
+
+.uperContent form button:hover,
+.uperContent form button:active,
+.uperContent form button:hover ~ svg {
+  background: #fff;
+  color: #4a4a4a;
+  border-radius: 10px;
+  fill: #4a4a4a;
+}
+
+.lowerContent {
+  width: 40vw;
+  text-align: center;
+}
+
+.lowerContent p span,
+.lowerContent span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .uperContent,
+  .uperContent form {
+    flex-direction: column;
+    margin: auto !important;
+    text-align: center;
+  }
+  .uperContent form {
+    margin-top: 25px !important;
+  }
+  .lowerContent {
+    margin: 25px 0;
+    width: 75vw;
+    text-align: center;
+  }
+}
